@@ -1,7 +1,35 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFrameworks>netstandard2.0;net452</TargetFrameworks>
+    <RootNamespace>Bukimedia.WooSharp</RootNamespace>
+    <AssemblyName>Bukimedia.WooSharp</AssemblyName>
+    <Company>Bukimedia</Company>
+    <Authors>Bukimedia</Authors>
+    <Product>WooSharp</Product>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageTags>woocommerce rest webservice official woosharp bukimedia</PackageTags>
+    <PackageReleaseNotes>* Added Task/Async features.</PackageReleaseNotes>
+    <Copyright>Copyright (C) 2020 Bukimedia</Copyright>
+    <RepositoryType>Dependency</RepositoryType>
+    <PackageProjectUrl>http://bukimedia.github.io/WooSharp/</PackageProjectUrl>
+    <PackageIconUrl>https://avatars0.githubusercontent.com/u/5653635?s=200&amp;amp;v=4</PackageIconUrl>
+    <RepositoryUrl>https://github.com/Bukimedia/WooSharp</RepositoryUrl>
+    <Description>CSharp .Net client library for the WooCommerce API via web service</Description>
+    <PackageLicenseUrl>https://www.gnu.org/licenses/gpl-3.0.en.html</PackageLicenseUrl>
+    <PackageId>WooSharp</PackageId>
+    <Version>1.0.0.1-SNAPSHOT</Version>
+    <Title>Bukimedia WooSharp</Title>
+    <PackageVersion>1.1.0.1-SNAPSHOT</PackageVersion>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="RestSharp" Version="106.11.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Entities\V1\" />
+  </ItemGroup>
 
 </Project>
